@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from amime.views import index
+from animaut.anime import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('anime/', index),
+    path('anime/', views.index),
 ]
